@@ -1,3 +1,4 @@
+import 'package:basic_calculator_app/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
@@ -22,7 +23,7 @@ class _ResultState extends State<Result> {
             AutoSizeText(
               '0',
               style: TextStyle(
-                color: Colors.black87,
+                color: cDark,
                 fontSize: 60,
               ),
               maxLines: 1,

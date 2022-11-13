@@ -1,3 +1,4 @@
+import 'package:basic_calculator_app/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -5,48 +6,48 @@ class Pads extends StatelessWidget {
   Pads({super.key});
 
   final ButtonStyle _numberElevatedButtonStyle = ElevatedButton.styleFrom(
-    elevation: 5,
+    elevation: 4,
     backgroundColor: Colors.white,
-    foregroundColor: Colors.black87,
-    textStyle: GoogleFonts.montserrat(
+    foregroundColor: cDark,
+    textStyle: GoogleFonts.plusJakartaSans(
       textStyle: const TextStyle(
-        fontSize: 24,
+        fontSize: 18,
         fontWeight: FontWeight.w400,
       ),
     ),
   );
 
   final ButtonStyle _equalToElevatedButtonStyle = ElevatedButton.styleFrom(
-    elevation: 5,
-    backgroundColor: Colors.redAccent[400],
+    elevation: 4,
+    backgroundColor: cPrimary,
     foregroundColor: Colors.white,
-    textStyle: GoogleFonts.montserrat(
+    textStyle: GoogleFonts.plusJakartaSans(
       textStyle: const TextStyle(
-        fontSize: 24,
+        fontSize: 18,
         fontWeight: FontWeight.w400,
       ),
     ),
   );
 
   final ButtonStyle _clearElevatedButtonStyle = ElevatedButton.styleFrom(
-    elevation: 5,
+    elevation: 4,
     backgroundColor: Colors.white,
-    foregroundColor: Colors.blue,
-    textStyle: GoogleFonts.montserrat(
+    foregroundColor: cPrimary,
+    textStyle: GoogleFonts.plusJakartaSans(
       textStyle: const TextStyle(
-        fontSize: 24,
+        fontSize: 18,
         fontWeight: FontWeight.w400,
       ),
     ),
   );
 
   final ButtonStyle _operatorElevatedButtonStyle = ElevatedButton.styleFrom(
-    elevation: 5,
-    backgroundColor: Colors.white,
-    foregroundColor: Colors.redAccent[400],
-    textStyle: GoogleFonts.montserrat(
+    elevation: 4,
+    backgroundColor: cDark,
+    foregroundColor: Colors.white,
+    textStyle: GoogleFonts.plusJakartaSans(
       textStyle: const TextStyle(
-        fontSize: 24,
+        fontSize: 18,
         fontWeight: FontWeight.w400,
       ),
     ),
@@ -84,6 +85,7 @@ class Pads extends StatelessWidget {
                       child: const Icon(
                         Icons.backspace,
                         color: Colors.blue,
+                        size: 18,
                       ),
                     ),
                   ),
@@ -286,6 +288,7 @@ class Pads extends StatelessWidget {
                       style: _numberElevatedButtonStyle,
                       child: const Icon(
                         Icons.replay,
+                        size: 18,
                       ),
                     ),
                   ),
