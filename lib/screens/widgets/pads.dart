@@ -11,7 +11,7 @@ class Pads extends StatelessWidget {
     foregroundColor: cDark,
     textStyle: GoogleFonts.plusJakartaSans(
       textStyle: const TextStyle(
-        fontSize: 18,
+        fontSize: 24,
         fontWeight: FontWeight.w400,
       ),
     ),
@@ -23,7 +23,7 @@ class Pads extends StatelessWidget {
     foregroundColor: Colors.white,
     textStyle: GoogleFonts.plusJakartaSans(
       textStyle: const TextStyle(
-        fontSize: 18,
+        fontSize: 30,
         fontWeight: FontWeight.w400,
       ),
     ),
@@ -31,11 +31,11 @@ class Pads extends StatelessWidget {
 
   final ButtonStyle _clearElevatedButtonStyle = ElevatedButton.styleFrom(
     elevation: 4,
-    backgroundColor: Colors.white,
-    foregroundColor: cPrimary,
+    backgroundColor: cDark,
+    foregroundColor: Colors.white,
     textStyle: GoogleFonts.plusJakartaSans(
       textStyle: const TextStyle(
-        fontSize: 18,
+        fontSize: 24,
         fontWeight: FontWeight.w400,
       ),
     ),
@@ -47,7 +47,7 @@ class Pads extends StatelessWidget {
     foregroundColor: Colors.white,
     textStyle: GoogleFonts.plusJakartaSans(
       textStyle: const TextStyle(
-        fontSize: 18,
+        fontSize: 30,
         fontWeight: FontWeight.w400,
       ),
     ),
@@ -81,11 +81,10 @@ class Pads extends StatelessWidget {
                     flex: 1,
                     child: ElevatedButton(
                       onPressed: () {},
-                      style: _numberElevatedButtonStyle,
+                      style: _clearElevatedButtonStyle,
                       child: const Icon(
                         Icons.backspace,
-                        color: Colors.blue,
-                        size: 18,
+                        size: 24,
                       ),
                     ),
                   ),
