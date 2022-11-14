@@ -52,6 +52,10 @@ class _CalculatorAppState extends State<CalculatorApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: cLight,
+      appBar: AppBar(
+        backgroundColor: cLight,
+        elevation: 0,
+      ),
       body: Column(
         children: [
           _buildResult(),
